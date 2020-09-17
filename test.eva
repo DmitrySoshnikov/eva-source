@@ -1,0 +1,54 @@
+(import Math)
+
+(var abs (prop Math abs))
+
+(var x (- 10))
+
+(print (abs x))
+
+(class Point null
+  (begin
+
+    (def constructor (this x y)
+      (begin
+        (set (prop this x) x)
+        (set (prop this y) y)))
+
+    (def calc (this)
+      (+ (prop this x) (prop this y)))))
+
+(class Point3D Point
+  (begin
+
+    (def constructor (this x y z)
+      (begin
+        ((prop super constructor) this x y)
+        (set (prop this z) z)))
+
+    (def calc (this)
+      (+ ((prop super calc) this) (prop this z)))))
+
+(var p (new Point3D 10 20 30))
+
+(print "Value:" ((prop p calc) p))
+
+// TODO:
+
+- Other data structures:
+
+  (var base (object (value 100)))
+
+  (object
+    (x 10)
+    (y 20)
+    (__proto__ base))
+
+  (var values (list 42 "Hello" foo))
+
+  values[0]
+
+  (idx values 0) // 42
+  (idx values 1) // "Hello"
+
+
+
