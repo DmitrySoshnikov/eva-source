@@ -1,6 +1,16 @@
 /**
  * S-expression parser.
  *
+ * 1. Install syntax-cli:
+ *
+ *   npm install -g syntax-cli
+ *
+ * 2. Generate the parser from this grammar:
+ *
+ *   syntax-cli -g parser/eva-grammar.bnf -m LALR1 -o parser/evaParser.js
+ *
+ * Examples:
+ *
  * Atom: 42, foo, bar, "Hello World"
  *
  * List: (), (+ 5 x), (print "hello")

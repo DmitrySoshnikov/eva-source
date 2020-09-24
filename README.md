@@ -20,7 +20,7 @@ The main test runner is located in `__tests__/run.js` which can be executed to v
 
 You can enroll to the full course here:
 
-- [On Udemy](https://www.udemy.com/course/essentials-of-interpretation/?referralCode=E7D6C9ADFCA273A53950)
+- On [Udemy](https://www.udemy.com/course/essentials-of-interpretation/?referralCode=E7D6C9ADFCA273A53950)
 - On [dmitrysoshnikov.education](http://www.dmitrysoshnikov.education/p/essentials-of-interpretation) school
 
 More details, classes, articles and info is on [http://dmitrysoshnikov.com](http://dmitrysoshnikov.com).
